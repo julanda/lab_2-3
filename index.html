@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Datatable</title>
+    <link href="bootstrap4.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet" >
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="datatable.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBc6zL3hCaVJF-Xmuvq0nEzzWviALobU20",
+            authDomain: "jsdatatable.firebaseapp.com",
+            databaseURL: "https://jsdatatable.firebaseio.com",
+            projectId: "jsdatatable",
+            storageBucket: "jsdatatable.appspot.com",
+            messagingSenderId: "564792882692",
+            appId: "1:564792882692:web:0606ecc38c13ff3e"
+        };
+        firebase.initializeApp(firebaseConfig);
+        var dataTableExample = new SimpleDataTableWidget('#datatable');
+    </script>
+
+
+
+
+</head>
+<body style="background-color: #d3d3d3">
+
+<div id="datatable">
+    Loading...
+</div>
+
+
+</body>
+</html>
